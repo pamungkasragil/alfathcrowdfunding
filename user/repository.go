@@ -23,6 +23,7 @@ func (r *repository) Save(user User) (User, error) {
 	return user, nil
 }
 
+// Fungsi ini digunakan untuk mencari data email di DB
 func (r *repository) FindByEmail(email string) (User, error) {
 	var user User
 
